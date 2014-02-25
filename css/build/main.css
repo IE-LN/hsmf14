@@ -1,35 +1,100 @@
+html {
+	display: none;
+}
+
+@font-face {
+    font-family: 'TitlingGothicFBSkyline-Standard';
+    src: url('/fonts/TitlingGothicFBSkyline-Standard.otf');
+}
+
+@font-face {
+    font-family: 'TitlingGothicFBCond-Bold';
+    src: url('/fonts/TitlingGothicFBCond-Bold.otf');
+}
+
 body {
 	margin: 0;
+	background: #000 url(/images/bg-desktop.jpg) no-repeat center top;
+	color: #fff;
+	font-family: 'TitlingGothicFBCondensed-Bold', sans-serif;
 }
 
 #container {
 	display: block;
-	width: 1000px;
+	width: 933px;
 	margin: 0 auto;
 	text-align: center;
 }
 
-.button {
-	display: inline-block;
-	background-color: red;
-	height: 30px;
-	width: 100px;
+#title {
+	max-width: 100%;
+	width: 933px;
+	height: 0;
+	padding-bottom: 13.4%;
+	background: transparent url(/images/logo-desktop.png) no-repeat center top/contain;
+	font-size: 0px;
+	margin: 0;
 }
 
-.messanging {
-	line-height: 30px;
+#buy {
+	background: transparent url(/images/btn-buy.png) no-repeat 0 0;
+	width: 181px;
+	height: 43px;
+	font-size: 0;
+}
+
+.button {
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 5px;
+}
+
+#buy-messanging,
+#location-messanging {
+	margin: 40px auto;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+#buy-messanging {
+	margin-top: 20px;
+	line-height: 43px;
+	font-size: 24px;
+}
+
+#date {
+	font-family: 'TitlingGothicFBSkyline-Standard', sans-serif;
+	font-weight: normal;
+	letter-spacing: 1px;
 }
 
 #video {
+	position: relative;
 	display: block;
 	margin: 0 auto;
-	width: 300px;
-	height: 160px;
-	cursor: pointer;
+	width: 552px;
+	height: 323px;
+	background: transparent url(/images/frame.jpg) no-repeat 0 0;
+}
+
+#video-player {
+	margin: 14px auto;
+}
+
+#location-messanging {
+	line-height: 29px;
+	font-size: 22px;
+}
+
+#map {
+	background: transparent url(/images/btn-maps.png) no-repeat 0 0;
+	width: 148px;
+	height: 29px;
+	font-size: 0;
 }
 
 #social {
-	margin: 0 auto;
+	margin: 0 auto 50px;
 	padding: 0;
 	width: 500px;
 	text-align: center;
@@ -41,18 +106,68 @@ body {
 }
 
 .social-icon {
-	background-color: blue;
+	background: transparent url(/images/social-sprite.jpg) no-repeat 0 0;
 	display: block;
-	width: 30px;
-	height: 30px;
+	width: 37px;
+	height: 37px;
 	margin: 0 7px;
 	font-size: 0px;
 }
 
-@media all and (max-width: 760px) {
+#facebook {
+	
+}
+
+#twitter {
+	background-position: -37px 0;
+}
+
+#instagram {
+	background-position: -74px 0;
+}
+
+#youtube {
+	background-position: -111px 0;
+}
+
+#soundcloud {
+	background-position: -148px 0;
+}
+
+#tumblr {
+	background-position: -185px 0;
+}
+
+#hardfest {
+	background-position: -222px 0;
+}
+
+@media all and (max-width: 933px) {
 	#container,
 	#social {
 		width: 100%;
+	}
+}
+
+@media all and (max-width: 575px) {
+	#title {
+		background-image: url(/images/logo-mobile.png);
+		padding-bottom: 76.45%;
+	}
+	
+	#buy {
+		display: block;
+		margin: 0 auto;
+	}
+	
+	#video {
+		width: 98%;
+		height: 0;
+		padding-bottom: 58.51%;
+	}
+	
+	#video-player {
+		width: 95% !important;
 	}
 }
 
