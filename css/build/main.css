@@ -154,28 +154,25 @@ body {
 	
 	#buy {
 		display: block;
-		margin: 0 auto;
+		margin: 0 auto 15px;
 	}
 	
 	#buy-messanging {
-		margin-bottom: 20px;
+		margin-bottom: 0px;
 	}
 	
 	#video {
-		width: 98%;
-		height: 0;
-		padding-bottom: 58.51%;
-		position: relative;
-		float: none;
-		clear: both;
+		background: none;
+		width: 95%;
 	}
 	
 	#video-player {
-		position: absolute;
-		top: 0;
-		left: 15px;
-		width: 94%;
-		height: 90%;
+		width: 100%;
+	}
+	
+	#location-messanging {
+		margin-top: 10px;
+		margin-bottom: 10px;
 	}
 }
 
