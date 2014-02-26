@@ -1,16 +1,16 @@
 @font-face {
     font-family: 'TitlingGothicFBSkyline-Standard';
-    src: url('/fonts/TitlingGothicFBSkyline-Standard.otf');
+    src: url('../fonts/TitlingGothicFBSkyline-Standard.otf');
 }
 
 @font-face {
     font-family: 'TitlingGothicFBCond-Bold';
-    src: url('/fonts/TitlingGothicFBCond-Bold.otf');
+    src: url('../fonts/TitlingGothicFBCond-Bold.otf');
 }
 
 body {
 	margin: 0;
-	background: #000 url(/images/bg-desktop.jpg) no-repeat center top;
+	background: #000 url(../images/bg-desktop.jpg) no-repeat center top;
 	color: #fff;
 	font-family: 'TitlingGothicFBCondensed-Bold', sans-serif;
 }
@@ -27,13 +27,13 @@ body {
 	width: 933px;
 	height: 0;
 	padding-bottom: 13.4%;
-	background: transparent url(/images/logo-desktop.png) no-repeat center top/contain;
+	background: transparent url(../images/logo-desktop.png) no-repeat center top/contain;
 	font-size: 0px;
 	margin: 0;
 }
 
 #buy {
-	background: transparent url(/images/btn-buy.png) no-repeat 0 0;
+	background: transparent url(../images/btn-buy.png) no-repeat 0 0;
 	width: 181px;
 	height: 43px;
 	font-size: 0;
@@ -70,7 +70,7 @@ body {
 	margin: 0 auto;
 	width: 552px;
 	height: 323px;
-	background: transparent url(/images/frame.jpg) no-repeat 0 0;
+	background: transparent url(../images/frame.jpg) no-repeat 0 0/contain;
 }
 
 #video-player {
@@ -83,7 +83,7 @@ body {
 }
 
 #map {
-	background: transparent url(/images/btn-maps.png) no-repeat 0 0;
+	background: transparent url(../images/btn-maps.png) no-repeat 0 0;
 	width: 148px;
 	height: 29px;
 	font-size: 0;
@@ -102,7 +102,7 @@ body {
 }
 
 .social-icon {
-	background: transparent url(/images/social-sprite.jpg) no-repeat 0 0;
+	background: transparent url(../images/social-sprite.jpg) no-repeat 0 0;
 	display: block;
 	width: 37px;
 	height: 37px;
@@ -147,8 +147,9 @@ body {
 
 @media all and (max-width: 575px) {
 	#title {
-		background-image: url(/images/logo-mobile.png);
-		padding-bottom: 76.45%;
+		background-image: url(../images/logo-mobile.png);
+		padding-bottom: 61.84%;
+		margin-top: 15px;
 	}
 	
 	#buy {
@@ -156,14 +157,25 @@ body {
 		margin: 0 auto;
 	}
 	
+	#buy-messanging {
+		margin-bottom: 20px;
+	}
+	
 	#video {
 		width: 98%;
 		height: 0;
 		padding-bottom: 58.51%;
+		position: relative;
+		float: none;
+		clear: both;
 	}
 	
 	#video-player {
-		width: 95% !important;
+		position: absolute;
+		top: 0;
+		left: 15px;
+		width: 94%;
+		height: 90%;
 	}
 }
 
